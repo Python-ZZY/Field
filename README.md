@@ -1,4 +1,5 @@
 # Field
+## Introductions
 This is a horror game, which I made for "Pygame Community Halloween Jam 2022".
 
 The game is very simple to play. Players need to use the direction keys to control the movement of the protagonist. Players can also get items on the map and put them into the package, and click to use them.
