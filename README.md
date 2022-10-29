@@ -1,2 +1,4 @@
 # Field
-A scray game (For Pygame Community Halloween Jam 2022)
+A scary game (For Pygame Community Halloween Jam 2022)
+
+In this game, you have to find a way out!!
