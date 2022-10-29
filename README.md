@@ -10,4 +10,5 @@ Finally, you should escape from this cemetery!
 The inspiration contributor of the game is WuxiaScrub. The game was designed by imitating his "Wuxia World" game with permission.
 ## Credits
 Coding by Python-ZZY
+
 Idea Contributor: WuxiaScrub
