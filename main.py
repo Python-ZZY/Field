@@ -5,11 +5,10 @@ except:
     pass
 
 import pygame as pg
-import asyncio
 from configs import WIDTH, HEIGHT
 from scenes import Menu
 
-async def main():
+def main():
     pg.init()
 
     pg.display.set_mode((WIDTH, HEIGHT))
@@ -17,4 +16,4 @@ async def main():
     Menu()
 
 if __name__ == "__main__":
-    asyncio.run(main())
+    main()

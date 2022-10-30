@@ -1,6 +1,5 @@
 import pygame as pg
 import pytmx.util_pygame as util_pygame
-import asyncio
 import json
 import random
 from sys import exit
@@ -49,7 +48,7 @@ class Scene:
     def init(self):
         pass
     
-    async def loop(self):
+    def loop(self):
         self.scene_running = True
         
         while self.scene_running:
@@ -66,8 +65,6 @@ class Scene:
             
             self.clock.tick(self.fps)
             pg.display.update()
-            
-            await asyncio.sleep(0)
 
     def onexit(self):
         self.quit_scene()
