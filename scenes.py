@@ -248,7 +248,7 @@ class Game(Scene, Plot):
         
     def load_map(self, lvname):
         mapdata = util_pygame.load_pygame(path(f"levels/{lvname}/map.tmx"))
-        self.background = pg.image.load(path(f"levels/{lvname}/background.png"))
+        self.background = pg.image.load(path(f"levels/{lvname}/background.png")).convert()
         self.config = json.load(open(path(f"levels/{lvname}/config.json")))
         self.hide = self._getlayer(mapdata, "hide")
         
