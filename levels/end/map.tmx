@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.9" tiledversion="1.9.1" orientation="orthogonal" renderorder="right-down" width="56" height="14" tilewidth="32" tileheight="32" infinite="0" nextlayerid="12" nextobjectid="72">
+ <properties>
+  <property name="show_vb" type="bool" value="false"/>
+ </properties>
+ <tileset firstgid="1" name="tile_earth" tilewidth="32" tileheight="32" tilecount="2" columns="2">
+  <image source="../../assets/tile_earth.png" width="64" height="32"/>
+ </tileset>
+ <tileset firstgid="3" name="dead_tree" tilewidth="100" tileheight="121" tilecount="1" columns="1">
+  <image source="../../assets/dead_tree.png" width="100" height="121"/>
+ </tileset>
+ <tileset firstgid="4" name="cemetery_gate" tilewidth="165" tileheight="104" tilecount="1" columns="1">
+  <image source="../../assets/cemetery_gate.png" width="165" height="104"/>
+ </tileset>
+ <tileset firstgid="5" name="tile_sand" tilewidth="32" tileheight="32" tilecount="1" columns="1">
+  <image source="../../assets/tile_sand.png" width="32" height="32"/>
+ </tileset>
+ <tileset firstgid="6" name="skeleton_sitting" tilewidth="30" tileheight="40" tilecount="1" columns="1">
+  <image source="../../assets/skeleton_sitting.png" width="30" height="40"/>
+ </tileset>
+ <tileset firstgid="7" name="tomb_place_of_death_i" tilewidth="45" tileheight="53" tilecount="1" columns="1">
+  <image source="../../assets/tomb_place_of_death_i.png" width="45" height="53"/>
+ </tileset>
+ <tileset firstgid="8" name="ghost_flipped" tilewidth="37" tileheight="70" tilecount="1" columns="1">
+  <image source="../../assets/ghost_flipped1.png" width="37" height="70"/>
+ </tileset>
+ <objectgroup id="2" name="object">
+  <object id="63" class="dead_tree" gid="3" x="1385.33" y="321.5" width="100" height="121"/>
+  <object id="58" class="dead_tree" gid="3" x="992.5" y="320" width="100" height="121"/>
+  <object id="62" class="dead_tree" gid="3" x="1228.67" y="321.167" width="100" height="121"/>
+  <object id="57" class="dead_tree" gid="3" x="600" y="320" width="100" height="121"/>
+  <object id="56" class="dead_tree" gid="3" x="814" y="320" width="100" height="121"/>
+  <object id="64" class="dec" gid="6" x="1336.01" y="323.202" width="30" height="40"/>
+  <object id="51" class="tomb_place_of_death" gid="7" x="426" y="129" width="45" height="53"/>
+  <object id="52" class="dec" gid="6" x="661.667" y="321.333" width="30" height="40"/>
+  <object id="53" class="dec" gid="6" x="831.667" y="322.167" width="30" height="40"/>
+  <object id="55" class="dec" gid="4" x="-14" y="330" width="165" height="104"/>
+  <object id="59" class="dec" gid="6" x="1103" y="322.5" width="30" height="40"/>
+  <object id="60" class="dec" gid="6" x="1138" y="322.5" width="30" height="40"/>
+  <object id="61" class="dec" gid="6" x="1026.3" y="322.915" width="30" height="40"/>
+  <object id="66" class="dec" gid="8" x="1654" y="307" width="37" height="70"/>
+ </objectgroup>
+ <objectgroup id="11" name="talk">
+  <object id="67" x="1280" y="52" width="54.6667" height="267.333">
+   <properties>
+    <property name="msg">i;Hello?
+ghost;It is dawn.
+i;...
+i;Where am I?
+ghost;This is the place of eternal death.
+ghost;No one can escape here.
+plot;switch_bgm
+ghost;You cannot either!;red
+i;...
+sound;thunder
+i;Who knows? Death may be like a dream.
+i;Anyway, I've seen the dawn.
+plot;GoodEnding</property>
+   </properties>
+  </object>
+  <object id="70" x="1" y="213" width="139" height="105">
+   <properties>
+    <property name="msg">i;The sun rises up.
+i;It's still pretty dark in here, though</property>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="3" name="main_char">
+  <object id="54" x="70" y="317">
+   <point/>
+  </object>
+ </objectgroup>
+ <layer id="1" name="tile" width="56" height="14">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,5,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,5,5,5,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,5,5,5,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,5,5,5,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,5,5,5,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,5,5,5,5,5,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,1,1,2,2,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,1,1,2,2,2,
+5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,1,1,2,2,2,2,2,2,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,1,1,2,2,2,
+5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,2,2,2,2,2,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,1,1,2,2,2,
+5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,1,1,1,1,2,2,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,1,1,2,2,2
+</data>
+ </layer>
+</map>
